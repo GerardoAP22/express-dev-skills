@@ -1,5 +1,9 @@
 <%- include('../partials/header') %>
 
     <h3><%= skill.skill %></h3>
+    <form action="/skills/<%= skill.id %>?_method=DELETE" class="delete-form" method="POST"> 
+        <!-- <%= skill.id %> -->
+        <button type="submit">Delete Skill</button>
+    </form>
 
 <%- include('../partials/footer') %>
